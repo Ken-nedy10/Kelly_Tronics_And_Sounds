@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>KELLYS_TRONIC_AND_SOUND</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col md-4">
+        <a href="#" class="ml-5" style="color: black; font-size: 20px"
+          ><i class="fa fa-map-marker"></i
+          ><span class="m-2">Dodoma / Tanzania</span></a
+        >
+      </div>
+      <div class="col md-4">
+        <a href="tel:+255 620 208 282" style="color: black; font-size: 20px"
+          ><i class="fa fa-phone"></i>+255 620 208 282</a
+        >
+      </div>
+      <div class="col md-4">
+        <a href="#" class="m-2" style="color: black; font-size: 20px"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a href="#" class="m-2" style="color: black; font-size: 20px"
+          ><i class="fa fa-instagram"></i
+        ></a>
+        <a href="#" class="m-2" style="color: black; font-size: 20px"
+          ><i class="fa fa-twitter"></i
+        ></a>
+        <a href="#" class="m-2" style="color: black; font-size: 20px"
+          ><i class="fa fa-whatsapp"></i
+        ></a>
+        <a href="#" class="m-2" style="color: black; font-size: 20px"
+        ><i class="fa fa-youtube-play"></i
+      ></a>
+        <a href="#" class="m-2" style="color: black; font-size: 20px"
+          ><i class="fa fa-google-plus"></i
+        ></a>
+      </div>
+    </div>
+    <div class="header-left">
+      <div class="search">
+          <div id="mahardhiSearch" class="input-group mahardhi-search">
+              <input type="text" class="form-control input-lg ui-autocomplete-input" size="6" maxlength="256" placeholder="Enter search keywords here" name="keyword" v-on:keyup.enter="searchFn()" v-model="searchData.keywords">
+              <span class="btn-search input-group-btn">
+                  <button type="button" class="btn btn-default btn-lg" v-on:click="searchFn()"><i class="fa fa-search"></i></button>
+              </span>
+          </div>
+      </div>
+  </div>
+
+    <div id="container">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#">Menu</a>
+            <!-- First Tier Drop Down -->
+            <ul>
+              <li><a href="#">TVs $ Home Theater Equipments</a></li>
+              <li><a href="#">Cell Phones</a></li>
+              <li><a href="#">Appliances</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Gallery</a>
+            <!-- First Tier Drop Down -->
+            <ul>
+              <li><a href="#">Refrigerators</a></li>
+              <li><a href="#">Televisions</a></li>
+              <li>
+                <a href="#">Smart Watches</a>
+                <!-- Second Tier Drop Down -->
+                <ul>
+                  <li><a href="#">Car Electronics & GPS Systems</a></li>
+                  <li><a href="#">All Outlet Audio</a></li>
+                  <li>
+                    <a href="#">Smart Home & Security</a>
+
+                    <!-- Third Tier Drop Down -->
+                    <ul>
+                      <li><a href="#">Cell Phones</a></li>
+                      <li><a href="#">Computers & Tablets</a></li>
+                      <li><a href="#">All Outlet Home Theater </a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+        </li>
+       </nav>
+    </div>
+
+    <div class="main-content">
+      <div>
+        <img
+          src="images/background-home.jpg"
+          style="width: 100%; height: 640px"
+        />
+      </div>
+      <!--The category section of our website-->
+      <section class="index-category">
+        <p>Categories</p>
+       
+        <a href="#" class="m-2" style="color: black; font-size: 20px"
+          ><i class="fa fa-home"></i
+        ></a>
+       
+        <a href="#" class="m-2" style="color: black; font-size: 20px"
+          ><i class="fa fa-laptop"></i
+        ></a>
+       
+        <a href="#" class="m-2" style="color: black; font-size: 20px"
+          ><i class="fa fa-mobile-phone"></i
+        ></a>
+        
+        <a href="#" class="m-2" style="color: black; font-size: 20px"
+          ><i class="fab fa-spotify"></i
+        ></a>
+
+       
+        <a href="#" class="m-2" style="color: black; font-size: 20px"
+          ><i class="fa fa-clock-o"></i
+        ></a>
+        
+        <a href="#" class="m-2" style="color: black; font-size: 20px"
+          ><i class="fa fa-television"></i
+        ></a>
+        
+        <a href="#" class="m-2" style="color: black; font-size: 20px"
+          ><i class="fa fa-map-marker"></i
+        ></a>
+      </section>
+
+      <!-- card start -->
+      <div class="row justify-content-center">
+        <h3 class="m-5" style="color: black">Explore Our Accessories</h3>
+
+        <div class="row">
+          <div class="col md-4">
+            <div class="card m-4" style="width: 18rem">
+              <img
+                class="card-img-top"
+                height="200"
+                src="images/magnet.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h7 class="card-title" style="font-weight: bolder"
+                  >Ear phone wireless</h7
+                >
+                <address style="font-size: 15px">
+                  MEIZU Bluetooth Earphone Headphone Magnetic Sport
+                </address>
+                <div class="row">
+                  <div class="col md-6">
+                    <a href="#" class="btn btn- btn-sm">Add to Cart</a>
+                  </div>
+                  <div class="col md-6">
+                    <a href="#" class="btn btn-success btn-sm">Tsh. 15,000</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col md-4">
+            <div class="card m-4" style="width: 18rem">
+              <img
+                class="card-img-top"
+                height="200"
+                src="images/headfone.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h7 class="card-title" style="font-weight: bolder"
+                  >headphone</h7
+                >
+                <address style="font-size: 15px">
+                  Prtukyt 6S Wireless Bluetooth Headphones Hi-Fi Stereo Foldable
+                  Wireless Stereo Headsets Earbuds with Built-in Mic (Black &
+                  Gold)
+                </address>
+                <div class="row">
+                  <div class="col md-6">
+                    <a href="#" class="btn btn- btn-sm">Add to Cart</a>
+                  </div>
+                  <div class="col md-6">
+                    <a href="#" class="btn btn-success btn-sm">Tsh. 30,000</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col md-4">
+            <div class="card m-4" style="width: 18rem">
+              <img
+                class="card-img-top"
+                height="200"
+                src="images/pro.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h7 class="card-title" style="font-weight: bolder"
+                  >Apple Airpod</h7
+                >
+                <address style="font-size: 15px">
+                  Apple AirPods Pro (second-gen) review: same look, better
+                </address>
+                <div class="row">
+                  <div class="col md-6">
+                    <a href="#" class="btn btn- btn-sm">Add to Cart</a>
+                  </div>
+                  <div class="col md-6">
+                    <a href="#" class="btn btn-success btn-sm">Tsh. 90,000</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="row">
+          <div class="col md-4">
+            <div class="card m-4" style="width: 18rem">
+              <img
+                class="card-img-top"
+                height="200"
+                src="images/EliteBook_x360_G2_W10P_01_21_e23d.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h7 class="card-title" style="font-weight: bolder">Hp</h7>
+                <address style="font-size: 15px">
+                  HP EliteBook x360 1030 G2 1EN98EA 13,3" Full HD Touch, Intel
+                  i5-7200U, 8GB, 256GB SSD, Windows 10 Pro
+                </address>
+                <div class="row">
+                  <div class="col md-6">
+                    <a href="#" class="btn btn- btn-sm">Add to Cart</a>
+                  </div>
+                  <div class="col md-6">
+                    <a href="#" class="btn btn-success btn-sm"
+                      >Tsh. 2,000,000</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col md-4">
+            <div class="card m-4" style="width: 18rem">
+              <img
+                class="card-img-top"
+                height="200"
+                src="images/galaxy-book-3-series.webp"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h7 class="card-title" style="font-weight: bolder">Samsung</h7>
+                <address style="font-size: 15px">
+                  Samsung's Galaxy Book 3 series includes a new flagship Ultra
+                  laptop
+                </address>
+                <div class="row">
+                  <div class="col md-6">
+                    <a href="#" class="btn btn-btn-sm">Add to Cart</a>
+                  </div>
+                  <div class="col md-6">
+                    <a href="#" class="btn btn-success btn-sm"
+                      >Tsh. 1,800,000</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col md-4">
+            <div class="card m-4" style="width: 18rem">
+              <img
+                class="card-img-top"
+                height="200"
+                src="images/leno.webp"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h7 class="card-title" style="font-weight: bolder">Lenovo</h7>
+                <address style="font-size: 15px">
+                  LENOVO Yoga 9i 14" 2 in 1 Laptop - Intel® Core™ i7, 1 TB SSD,
+                  Grey
+                </address>
+                <div class="row">
+                  <div class="col md-6">
+                    <a href="#" class="btn btn-btn-sm">Add to Cart</a>
+                  </div>
+                  <div class="col md-6">
+                    <a href="#" class="btn btn-success btn-sm"
+                      >Tsh. 1,500,000</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="row">
+          <div class="col md-4">
+            <div class="card m-4" style="width: 18rem">
+              <img
+                class="card-img-top"
+                height="200"
+                src="images/theater.webp"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h7 class="card-title" style="font-weight: bolder"
+                  >LG LHD-457B</h7
+                >
+                <address style="font-size: 15px">
+                  5.1ch Bluetooth Home Theatre System - 330W - Black.
+                </address>
+                <div class="row">
+                  <div class="col md-6">
+                    <a href="#" class="btn btn- btn-sm">Add to Cart</a>
+                  </div>
+                  <div class="col md-6">
+                    <a href="#" class="btn btn-success btn-sm">Tsh. 900,000</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col md-4">
+            <div class="card m-4" style="width: 18rem">
+              <img
+                class="card-img-top"
+                height="200"
+                src="images/sony-home-theatre.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h7 class="card-title" style="font-weight: bolder">Sony</h7>
+                <address style="font-size: 15px">
+                  SONY | Harvey Norman Singapore
+                </address>
+                <div class="row">
+                  <div class="col md-6">
+                    <a href="#" class="btn btn- btn-sm">Add to Cart</a>
+                  </div>
+                  <div class="col md-6">
+                    <a href="#" class="btn btn-success btn-sm"
+                      >Tsh. 1,000,000</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col md-4">
+            <div class="card m-4" style="width: 18rem">
+              <img
+                class="card-img-top"
+                height="200"
+                src="images/home.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h7 class="card-title" style="font-weight: bolder"
+                  >Home Theater Systems</h7
+                >
+                <address style="font-size: 15px">
+                  Home Theater Systems Home Theater Systems Asheville, NC
+                </address>
+                <div class="row">
+                  <div class="col md-6">
+                    <a href="#" class="btn btn- btn-sm">Add to Cart</a>
+                  </div>
+                  <div class="col md-6">
+                    <a href="#" class="btn btn-success btn-sm">Tsh. 900,000</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="row">
+          <div class="col md-4">
+            <div class="card m-4" style="width: 18rem">
+              <img
+                class="card-img-top"
+                height="200"
+                src="images/product-04.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h7 class="card-title" style="font-weight: bolder"
+                  >Bass Meet Clarity</h7
+                >
+                <address style="font-size: 15px">
+                  Z407 Bluetooth Computer Speakers with Subwoofer | Logitech
+                </address>
+                <div class="row">
+                  <div class="col md-6">
+                    <a href="#" class="btn btn- btn-sm">Add to Cart</a>
+                  </div>
+                  <div class="col md-6">
+                    <a href="#" class="btn btn-success btn-sm">Tsh. 110,000</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col md-4">
+            <div class="card m-4" style="width: 18rem">
+              <img
+                class="card-img-top"
+                height="200"
+                src="images/product-06.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h7 class="card-title" style="font-weight: bolder"
+                  >Mice Logitech</h7
+                >
+                <address style="font-size: 15px">
+                  MX Master 3S Wireless Mouse | Logitech Europe
+                </address>
+                <div class="row">
+                  <div class="col md-6">
+                    <a href="#" class="btn btn- btn-sm">Add to Cart</a>
+                  </div>
+                  <div class="col md-6">
+                    <a href="#" class="btn btn-success btn-sm">Tsh. 20,000</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col md-4">
+            <div class="card m-4" style="width: 18rem">
+              <img
+                class="card-img-top"
+                height="200"
+                src="images/A3127_1024x.webp"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h7 class="card-title" style="font-weight: bolder"
+                  >Soundcore</h7
+                >
+                <address style="font-size: 15px">
+                  SOUNDCORE MINI 3 PRO ANKER BT SPEAKER
+                </address>
+                <div class="row">
+                  <div class="col md-6">
+                    <a href="#" class="btn btn- btn-sm">Add to Cart</a>
+                  </div>
+                  <div class="col md-6">
+                    <a href="#" class="btn btn-success btn-sm">Tsh. 90,000</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="row">
+          <div class="col md-4">
+            <div class="card m-4" style="width: 18rem">
+              <img
+                class="card-img-top"
+                height="200"
+                src="images/Samsung-Galaxy-S22-Ultra-5G.jpg (2).webp"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h7 class="card-title" style="font-weight: bolder"
+                  > Galaxy S22 Ultra 5G</h7
+                >
+                <address style="font-size: 15px">
+                  IP68 dust and water-resistant, comes in four models, with 128GB, 256GB, 512GB, or 1TB of internal storage.
+                </address>
+                <div class="row">
+                  <div class="col md-6">
+                    <a href="#" class="btn btn- btn-sm">Add to Cart</a>
+                  </div>
+                  <div class="col md-6">
+                    <a href="#" class="btn btn-success btn-sm">Tsh. 1,500,000</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col md-4">
+            <div class="card m-4" style="width: 18rem">
+              <img
+                class="card-img-top"
+                height="200"
+                src="images/note.jpeg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h7 class="card-title" style="font-weight: bolder"
+                  >Samsung Galaxy Note 10 Plus</h7
+                >
+                <address style="font-size: 15px">
+                  Samsung Galaxy Note 10 Plus Single SIM 12GB RAM 256GB 6.8" Dynamic AMOLED Display 16MP Quad Camera 4300mAh Fast Charging Battery Boxed Certified Refurbished 6 Months Warranty
+                </address>
+                <div class="row">
+                  <div class="col md-6">
+                    <a href="#" class="btn btn- btn-sm">Add to Cart</a>
+                  </div>
+                  <div class="col md-6">
+                    <a href="#" class="btn btn-success btn-sm">Tsh. 1,200,000</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col md-4">
+            <div class="card m-4" style="width: 18rem">
+              <img
+                class="card-img-top"
+                height="200"
+                src="images/Samsung-Galaxy-A54-5G-b.webp"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h7 class="card-title" style="font-weight: bolder"
+                  >Samsung Galaxy A54</h7
+                >
+                <address style="font-size: 15px">
+                  Samsung Galaxy A54 5G 8gb 256gb 
+                </address>
+                <div class="row">
+                  <div class="col md-6">
+                    <a href="#" class="btn btn- btn-sm">Add to Cart</a>
+                  </div>
+                  <div class="col md-6">
+                    <a href="#" class="btn btn-success btn-sm">Tsh. 1,000,000</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <h3 class="m-5" style="color: black">Our Services</h3>
+
+      <!-- card end -->
+    </div>
+  </body>
+</html>
